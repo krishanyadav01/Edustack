@@ -33,7 +33,10 @@ export const instance = new Razorpay({
 const server=http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://edustack-2.onrender.com"
+    ],
     methods: ["GET", "POST"]
   }
 });
@@ -61,9 +64,12 @@ io.on('connection', (socket) => {
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin:"http://localhost:5173",
-    credentials:true
-}))
+  origin: [
+    "http://localhost:5173",
+    "https://edustack-2.onrender.com"
+  ],
+  credentials: true
+}));
 app.use(express.urlencoded({ extended: true }));        //this is done for reading response from razorpay post url at api/v1/purchase/verification
 
 //apis  endpoints

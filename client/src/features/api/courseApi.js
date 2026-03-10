@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 
-const COURSE_API = "https://edustack-qkzh.onrender.com";
+const COURSE_API = "https://edustack-qkzh.onrender.com/api/v1/course";
 export const courseApi = createApi({
     reducerPath: "courseApi",
     //tagTypes:['Refetch_Creator_Course'],

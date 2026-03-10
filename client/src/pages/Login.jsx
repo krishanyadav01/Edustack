@@ -120,7 +120,7 @@ const Login = () => {
                   name="name"
                   value={signupInput.name}
                   onChange={(event) => changeInputHandler(event, "signup")}
-                  placeholder="eg. Chirag"
+                  placeholder="eg. Krishan"
                   required="true" />
               </div>
               <div className="space-y-1">
@@ -129,7 +129,7 @@ const Login = () => {
                   name="email"
                   value={signupInput.email}
                   onChange={(event) => changeInputHandler(event, "signup")}
-                  placeholder="eg. Chirag@gmail.com"
+                  placeholder="eg. Krishan@gmail.com"
                   required={true}
                 />
               </div>
@@ -187,7 +187,7 @@ const Login = () => {
                   name="email"
                   value={loginInput.email}
                   onChange={(event) => changeInputHandler(event, "login")}
-                  placeholder="eg. Chirag@gmail.com"
+                  placeholder="eg. Krishan@gmail.com"
                   required="true"
                 />
               </div>

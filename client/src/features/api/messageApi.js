@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 
-const MESSAGE_API = "http://localhost:8080/api/v1/message";
+const MESSAGE_API = "https://edustack-qkzh.onrender.com/api/v1/message";
 export const  messageApi = createApi({
     reducerPath:  "messageApi",
     //tagTypes:['Refetch_Creator_Course'],

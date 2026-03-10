@@ -24,7 +24,7 @@ const BuyCourseButton = ({ course }) => {
         description: "Course Purchase",
         image: course.courseThumbnail,
         order_id: data.data.order.id,
-        callback_url: "http://localhost:8080/api/v1/purchase/verification",
+        callback_url: "https://edustack-qkzh.onrender.com/api/v1/purchase/verification",
         prefill: {
           name: course.creator.name,
           email: course.creator.email,

@@ -1,7 +1,7 @@
 import {createApi, fetchBaseQuery, QueryStatus} from "@reduxjs/toolkit/query/react";
 
 
-const PURCHASE_API="http://localhost:8080/api/v1/purchase/"
+const PURCHASE_API="https://edustack-qkzh.onrender.com/api/v1/purchase/"
 export const coursePurchaseApi=createApi({
     reducerPath:"coursePurchaseApi",
     baseQuery:fetchBaseQuery({

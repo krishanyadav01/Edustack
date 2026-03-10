@@ -1,7 +1,7 @@
 import {createApi, fetchBaseQuery, QueryStatus} from "@reduxjs/toolkit/query/react";
 
 
-const SUPER_ADMIN_API="http://localhost:8080/api/v1/superadmin/"
+const SUPER_ADMIN_API="https://edustack-qkzh.onrender.com/api/v1/superadmin/"
 export const superAdminApi=createApi({
     reducerPath:"superAdminApi",
     baseQuery:fetchBaseQuery({

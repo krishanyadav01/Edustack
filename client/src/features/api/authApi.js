@@ -1,7 +1,7 @@
 import {createApi, fetchBaseQuery, QueryStatus} from "@reduxjs/toolkit/query/react";
 import { userLoggedIn, userLoggedOut } from "../authSlice";
 
-const USER_API="http://localhost:8080/api/v1/user/"
+const USER_API="https://edustack-qkzh.onrender.com"
 export const authApi=createApi({
     reducerPath:"authApi",
     baseQuery:fetchBaseQuery({
